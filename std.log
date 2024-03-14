@@ -1,14 +1,14 @@
-2024-03-14 22:22:43,999 Using selector: EpollSelector
-2024-03-14 22:24:44,942 Error: Data scraping unable to complete in 60.0s (retries: 3)
-2024-03-14 22:24:44,942 Using selector: EpollSelector
-2024-03-14 22:26:45,698 Error: Data scraping unable to complete in 60.0s (retries: 3)
-2024-03-14 22:26:45,699 Using selector: EpollSelector
-2024-03-14 22:28:46,379 Error: Data scraping unable to complete in 60.0s (retries: 3)
-2024-03-14 22:28:46,379 Using selector: EpollSelector
-2024-03-14 22:28:46,897 Error: Target page, context or browser has been closed
-2024-03-14 22:28:46,897 Error: It looks like you are using Playwright Sync API inside the asyncio loop.
-Please use the Async API instead.
-2024-03-14 22:28:46,897 Error: It looks like you are using Playwright Sync API inside the asyncio loop.
-Please use the Async API instead.
-2024-03-14 22:28:46,898 Error: It looks like you are using Playwright Sync API inside the asyncio loop.
-Please use the Async API instead.
+2024-03-14 23:19:55,374 Using selector: EpollSelector
+2024-03-14 23:21:57,299 Error: Data scraping unable to complete in 60.0s (retries: 3)
+2024-03-14 23:21:57,299 Using selector: EpollSelector
+2024-03-14 23:23:58,051 Error: Data scraping unable to complete in 60.0s (retries: 3)
+2024-03-14 23:23:58,052 Using selector: EpollSelector
+2024-03-14 23:25:58,855 Error: Data scraping unable to complete in 60.0s (retries: 3)
+2024-03-14 23:25:58,855 Using selector: EpollSelector
+2024-03-14 23:27:59,631 Error: Data scraping unable to complete in 60.0s (retries: 3)
+2024-03-14 23:27:59,632 Using selector: EpollSelector
+2024-03-14 23:30:00,507 Error: Data scraping unable to complete in 60.0s (retries: 3)
+2024-03-14 23:30:00,508 Using selector: EpollSelector
+2024-03-14 23:32:01,295 Error: Data scraping unable to complete in 60.0s (retries: 3)
+2024-03-14 23:32:01,295 Using selector: EpollSelector
+2024-03-14 23:34:02,075 Error: Data scraping unable to complete in 60.0s (retries: 3)
