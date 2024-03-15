@@ -1,44 +1,14 @@
-2024-03-15 09:19:48,214 Using selector: EpollSelector
-2024-03-15 09:21:48,960 Error: Data scraping unable to complete in 60.0s (retries: 3)
-2024-03-15 09:21:48,960 Using selector: EpollSelector
-2024-03-15 09:23:51,042 Error: Data scraping unable to complete in 60.0s (retries: 3)
-2024-03-15 09:23:51,043 Using selector: EpollSelector
-2024-03-15 09:25:52,203 Error: Data scraping unable to complete in 60.0s (retries: 3)
-2024-03-15 09:25:52,204 Using selector: EpollSelector
-2024-03-15 09:27:52,867 Error: Data scraping unable to complete in 60.0s (retries: 3)
-2024-03-15 09:27:52,867 Using selector: EpollSelector
-2024-03-15 09:29:54,171 Error: Data scraping unable to complete in 60.0s (retries: 3)
-2024-03-15 09:29:54,171 Using selector: EpollSelector
-2024-03-15 09:31:58,853 Error: Data scraping unable to complete in 60.0s (retries: 3)
-2024-03-15 09:31:58,853 Using selector: EpollSelector
-2024-03-15 09:31:59,326 Error: Target page, context or browser has been closed
-Browser logs:
-
-<launching> /home/runner/.cache/ms-playwright/chromium-1105/chrome-linux/chrome --disable-field-trial-config --disable-background-networking --enable-features=NetworkService,NetworkServiceInProcess --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=ImprovedCookieControls,LazyFrameLoading,GlobalMediaControls,DestroyProfileOnBrowserClose,MediaRouter,DialMediaRouteProvider,AcceptCHFrame,AutoExpandDetailsElement,CertificateTransparencyComponentUpdater,AvoidUnnecessaryBeforeUnloadCheckSync,Translate,HttpsUpgrades,PaintHolding --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --enable-automation --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --headless --hide-scrollbars --mute-audio --blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4 --no-sandbox --disable-gpu --single-process --user-data-dir=/tmp/playwright_chromiumdev_profile-JzmRx7 --remote-debugging-pipe --no-startup-window
-<launched> pid=3577
-[pid=3577][err] [0315/093159.131541:WARNING:audio_manager_linux.cc(53)] Falling back to ALSA for audio output. PulseAudio is not available or could not be initialized.
-[pid=3577][err] [0315/093159.132220:INFO:policy_logger.cc(145)] :components/policy/core/common/config_dir_policy_loader.cc(118) Skipping mandatory platform policies because no policy file was found at: /etc/chromium/policies/managed
-[pid=3577][err] [0315/093159.132233:INFO:policy_logger.cc(145)] :components/policy/core/common/config_dir_policy_loader.cc(118) Skipping recommended platform policies because no policy file was found at: /etc/chromium/policies/recommended
-[pid=3577][err] [0315/093159.137364:WARNING:bluez_dbus_manager.cc(248)] Floss manager not present, cannot set Floss enable/disable.
-[pid=3577][err] Received signal 11 SI_KERNEL000000000000
-[pid=3577][err]  Possibly a General Protection Fault, can be due to a non-canonical address dereference. See "Intel 64 and IA-32 Architectures Software Developer’s Manual", Volume 1, Section 3.3.7.1.
-[pid=3577][err] #0 0x5ad8e3eaacc2 base::debug::CollectStackTrace()
-[pid=3577][err] #1 0x5ad8e3e989b3 base::debug::StackTrace::StackTrace()
-[pid=3577][err] #2 0x5ad8e3eaa6e1 base::debug::(anonymous namespace)::StackDumpSignalHandler()
-[pid=3577][err] #3 0x78c207c42520 (/usr/lib/x86_64-linux-gnu/libc.so.6+0x4251f)
-[pid=3577][err] #4 0x78c207c44c1d getenv
-[pid=3577][err] #5 0x5ad8e402d3b2 event_base_new
-[pid=3577][err] #6 0x5ad8e3eb658d base::MessagePumpLibevent::MessagePumpLibevent()
-[pid=3577][err] #7 0x5ad8e3df8beb base::MessagePump::Create()
-[pid=3577][err] #8 0x5ad8e3e7a403 base::internal::SequenceManagerThreadDelegate::BindToCurrentThread()
-[pid=3577][err] #9 0x5ad8e3e7a058 base::Thread::ThreadMain()
-[pid=3577][err] #10 0x5ad8e3e8e6ef base::(anonymous namespace)::ThreadFunc()
-[pid=3577][err] #11 0x78c207c94ac3 (/usr/lib/x86_64-linux-gnu/libc.so.6+0x94ac2)
-[pid=3577][err] #12 0x78c207d26850 (/usr/lib/x86_64-linux-gnu/libc.so.6+0x12684f)
-[pid=3577][err]   r8: 000014cc0009a0b0  r9: 000014cc00236780 r10: 000014cc0009a130 r11: 0000000000000246
-[pid=3577][err]  r12: 00dc22005c340000 r13: 0000000000000011 r14: 000000000000000f r15: 00005ad8dd05f3ea
-[pid=3577][err]   di: 00005ad8dd05f3e8  si: 000000000000009b  bp: 0000000000005645  bx: 0000345c0022c800
-[pid=3577][err]   dx: 00005ad8dd05f3e8  ax: 0000000000000011  cx: 000078c207cec09b  sp: 000078c1f09fb2d0
-[pid=3577][err]   ip: 000078c207c44c1d efl: 0000000000010206 cgf: 002b000000000033 erf: 0000000000000000
-[pid=3577][err]  trp: 000000000000000d msk: 0000000000000000 cr2: 0000000000000000
-[pid=3577][err] [end of stack trace]
+2024-03-15 10:24:25,877 Using selector: EpollSelector
+2024-03-15 10:26:27,085 Error: Data scraping unable to complete in 60.0s (retries: 3)
+2024-03-15 10:26:27,085 Using selector: EpollSelector
+2024-03-15 10:28:27,722 Error: Data scraping unable to complete in 60.0s (retries: 3)
+2024-03-15 10:28:27,722 Using selector: EpollSelector
+2024-03-15 10:30:28,345 Error: Data scraping unable to complete in 60.0s (retries: 3)
+2024-03-15 10:30:28,345 Using selector: EpollSelector
+2024-03-15 10:32:44,669 Error: Data scraping unable to complete in 60.0s (retries: 3)
+2024-03-15 10:32:44,670 Using selector: EpollSelector
+2024-03-15 10:34:45,282 Error: Data scraping unable to complete in 60.0s (retries: 3)
+2024-03-15 10:34:45,282 Using selector: EpollSelector
+2024-03-15 10:36:47,173 Error: Data scraping unable to complete in 60.0s (retries: 3)
+2024-03-15 10:36:47,174 Using selector: EpollSelector
+2024-03-15 10:38:47,817 Error: Data scraping unable to complete in 60.0s (retries: 3)
