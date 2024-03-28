@@ -1,14 +1,44 @@
-2024-03-28 20:22:28,562 Using selector: EpollSelector
-2024-03-28 20:24:31,266 Error: Data scraping unable to complete in 60.0s (retries: 3)
-2024-03-28 20:24:31,266 Using selector: EpollSelector
-2024-03-28 20:26:33,498 Error: Data scraping unable to complete in 60.0s (retries: 3)
-2024-03-28 20:26:33,498 Using selector: EpollSelector
-2024-03-28 20:28:35,941 Error: Data scraping unable to complete in 60.0s (retries: 3)
-2024-03-28 20:28:35,941 Using selector: EpollSelector
-2024-03-28 20:30:38,216 Error: Data scraping unable to complete in 60.0s (retries: 3)
-2024-03-28 20:30:38,217 Using selector: EpollSelector
-2024-03-28 20:32:40,953 Error: Data scraping unable to complete in 60.0s (retries: 3)
-2024-03-28 20:32:40,954 Using selector: EpollSelector
-2024-03-28 20:34:43,045 Error: Data scraping unable to complete in 60.0s (retries: 3)
-2024-03-28 20:34:43,046 Using selector: EpollSelector
-2024-03-28 20:36:45,657 Error: Data scraping unable to complete in 60.0s (retries: 3)
+2024-03-28 21:19:12,375 Using selector: EpollSelector
+2024-03-28 21:21:14,820 Error: Data scraping unable to complete in 60.0s (retries: 3)
+2024-03-28 21:21:14,820 Using selector: EpollSelector
+2024-03-28 21:21:15,295 Error: Target page, context or browser has been closed
+Browser logs:
+
+<launching> /home/runner/.cache/ms-playwright/chromium-1105/chrome-linux/chrome --disable-field-trial-config --disable-background-networking --enable-features=NetworkService,NetworkServiceInProcess --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=ImprovedCookieControls,LazyFrameLoading,GlobalMediaControls,DestroyProfileOnBrowserClose,MediaRouter,DialMediaRouteProvider,AcceptCHFrame,AutoExpandDetailsElement,CertificateTransparencyComponentUpdater,AvoidUnnecessaryBeforeUnloadCheckSync,Translate,HttpsUpgrades,PaintHolding --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --enable-automation --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --headless --hide-scrollbars --mute-audio --blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4 --no-sandbox --disable-gpu --single-process --user-data-dir=/tmp/playwright_chromiumdev_profile-EBO2XB --remote-debugging-pipe --no-startup-window
+<launched> pid=3135
+[pid=3135][err] [0328/212115.099968:WARNING:audio_manager_linux.cc(53)] Falling back to ALSA for audio output. PulseAudio is not available or could not be initialized.
+[pid=3135][err] [0328/212115.102428:INFO:policy_logger.cc(145)] :components/policy/core/common/config_dir_policy_loader.cc(118) Skipping mandatory platform policies because no policy file was found at: /etc/chromium/policies/managed
+[pid=3135][err] [0328/212115.102449:INFO:policy_logger.cc(145)] :components/policy/core/common/config_dir_policy_loader.cc(118) Skipping recommended platform policies because no policy file was found at: /etc/chromium/policies/recommended
+[pid=3135][err] Received signal 11 SI_KERNEL000000000000
+[pid=3135][err]  Possibly a General Protection Fault, can be due to a non-canonical address dereference. See "Intel 64 and IA-32 Architectures Software Developer’s Manual", Volume 1, Section 3.3.7.1.
+[pid=3135][err] #0 0x564caeec2cc2 [0328/212115.106806:WARNING:bluez_dbus_manager.cc(248)] Floss manager not present, cannot set Floss enable/disable.
+[pid=3135][err] base::debug::CollectStackTrace()
+[pid=3135][err] #1 0x564caeeb09b3 base::debug::StackTrace::StackTrace()
+[pid=3135][err] #2 0x564caeec26e1 base::debug::(anonymous namespace)::StackDumpSignalHandler()
+[pid=3135][err] #3 0x7f7510842520 (/usr/lib/x86_64-linux-gnu/libc.so.6+0x4251f)
+[pid=3135][err] #4 0x7f7510844c1d getenv
+[pid=3135][err] #5 0x564caf0453b2 event_base_new
+[pid=3135][err] #6 0x564caeece58d base::MessagePumpLibevent::MessagePumpLibevent()
+[pid=3135][err] #7 0x564caee10beb base::MessagePump::Create()
+[pid=3135][err] #8 0x564caee92403 base::internal::SequenceManagerThreadDelegate::BindToCurrentThread()
+[pid=3135][err] #9 0x564caee92058 base::Thread::ThreadMain()
+[pid=3135][err] #10 0x564caeea66ef base::(anonymous namespace)::ThreadFunc()
+[pid=3135][err] #11 0x7f7510894ac3 (/usr/lib/x86_64-linux-gnu/libc.so.6+0x94ac2)
+[pid=3135][err] #12 0x7f7510926850 (/usr/lib/x86_64-linux-gnu/libc.so.6+0x12684f)
+[pid=3135][err]   r8: 000032f8000953b0  r9: 000032f800239240 r10: 000032f800095430 r11: 0000000000000246
+[pid=3135][err]  r12: 00dc220098000000 r13: 0000000000000011 r14: 000000000000000f r15: 0000564ca80773ea
+[pid=3135][err]   di: 0000564ca80773e8  si: 0000000000000097  bp: 0000000000005645  bx: 000000980022c800
+[pid=3135][err]   dx: 0000564ca80773e8  ax: 0000000000000011  cx: 00007f75108ec09b  sp: 00007f74f95fc2d0
+[pid=3135][err]   ip: 00007f7510844c1d efl: 0000000000010206 cgf: 002b000000000033 erf: 0000000000000000
+[pid=3135][err]  trp: 000000000000000d msk: 0000000000000000 cr2: 0000000000000000
+[pid=3135][err] [end of stack trace]
+2024-03-28 21:21:15,295 Error: It looks like you are using Playwright Sync API inside the asyncio loop.
+Please use the Async API instead.
+2024-03-28 21:21:15,295 Error: It looks like you are using Playwright Sync API inside the asyncio loop.
+Please use the Async API instead.
+2024-03-28 21:21:15,296 Error: It looks like you are using Playwright Sync API inside the asyncio loop.
+Please use the Async API instead.
+2024-03-28 21:21:15,296 Error: It looks like you are using Playwright Sync API inside the asyncio loop.
+Please use the Async API instead.
+2024-03-28 21:21:15,296 Error: It looks like you are using Playwright Sync API inside the asyncio loop.
+Please use the Async API instead.
