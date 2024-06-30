@@ -1,134 +1,14 @@
-2024-06-30 22:24:23,260 Using selector: EpollSelector
-2024-06-30 22:26:25,695 Error: Data scraping unable to complete in 60.0s (retries: 3)
-2024-06-30 22:26:25,696 Using selector: EpollSelector
-2024-06-30 22:28:28,083 Error: Data scraping unable to complete in 60.0s (retries: 3)
-2024-06-30 22:28:28,084 Using selector: EpollSelector
-2024-06-30 22:30:30,588 Error: Data scraping unable to complete in 60.0s (retries: 3)
-2024-06-30 22:30:30,588 Using selector: EpollSelector
-2024-06-30 22:32:32,755 Error: Data scraping unable to complete in 60.0s (retries: 3)
-2024-06-30 22:32:32,755 Using selector: EpollSelector
-2024-06-30 22:34:35,171 Error: Data scraping unable to complete in 60.0s (retries: 3)
-2024-06-30 22:34:35,172 Using selector: EpollSelector
-2024-06-30 22:36:37,556 Error: Data scraping unable to complete in 60.0s (retries: 3)
-2024-06-30 22:36:37,556 Using selector: EpollSelector
-2024-06-30 22:36:38,363 Error: BrowserType.launch: Target page, context or browser has been closed
-Browser logs:
-
-<launching> /home/runner/.cache/ms-playwright/chromium-1117/chrome-linux/chrome --disable-field-trial-config --disable-background-networking --enable-features=NetworkService,NetworkServiceInProcess --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=ImprovedCookieControls,LazyFrameLoading,GlobalMediaControls,DestroyProfileOnBrowserClose,MediaRouter,DialMediaRouteProvider,AcceptCHFrame,AutoExpandDetailsElement,CertificateTransparencyComponentUpdater,AvoidUnnecessaryBeforeUnloadCheckSync,Translate,HttpsUpgrades,PaintHolding --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --enable-automation --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --headless --hide-scrollbars --mute-audio --blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4 --no-sandbox --disable-gpu --single-process --user-data-dir=/tmp/playwright_chromiumdev_profile-XXXXXXXjH47a --remote-debugging-pipe --no-startup-window
-<launched> pid=3485
-[pid=3485][err] [0630/223637.828434:WARNING:audio_manager_linux.cc(53)] Falling back to ALSA for audio output. PulseAudio is not available or could not be initialized.
-[pid=3485][err] [0630/223637.832314:INFO:config_dir_policy_loader.cc(118)] Skipping mandatory platform policies because no policy file was found at: /etc/chromium/policies/managed
-[pid=3485][err] [0630/223637.832332:INFO:config_dir_policy_loader.cc(118)] Skipping recommended platform policies because no policy file was found at: /etc/chromium/policies/recommended
-[pid=3485][err] Received signal 11 SI_KERNEL000000000000
-[pid=3485][err]  Possibly a General Protection Fault, can be due to a non-canonical address dereference. See "Intel 64 and IA-32 Architectures Software Developer’s Manual", Volume 1, Section 3.3.7.1.
-[pid=3485][err] #0 0x55fe54d53332 base::debug::CollectStackTrace()
-[pid=3485][err] #1 0x55fe54d409fe base::debug::StackTrace::StackTrace()
-[pid=3485][err] #2 0x55fe54d52d41 base::debug::(anonymous namespace)::StackDumpSignalHandler()
-[pid=3485][err] #3 0x7f6623042520 (/usr/lib/x86_64-linux-gnu/libc.so.6+0x4251f)
-[pid=3485][err] #4 0x7f6623044c1d getenv
-[pid=3485][err] #5 0x55fe54c87a40 base::(anonymous namespace)::EnvironmentImpl::GetVarImpl()
-[pid=3485][err] #6 0x55fe54c87846 base::(anonymous namespace)::EnvironmentImpl::GetVar()
-[pid=3485][err] #7 0x55fe52dbe56c content::GetNetworkService()
-[pid=3485][err] #8 0x55fe52dbf1a5 content::(anonymous namespace)::BindNetworkChangeManagerReceiver()
-[pid=3485][err] #9 0x55fe529f64c1 base::internal::Invoker<>::Run()
-[pid=3485][err] #10 0x55fe5047bb8b base::RepeatingCallback<>::Run()
-[pid=3485][err] #11 0x55fe557bf4f7 network::NetworkConnectionTracker::Initialize()
-[pid=3485][err] #12 0x55fe557bf46f network::NetworkConnectionTracker::NetworkConnectionTracker()
-[pid=3485][err] #13 0x55fe52dbf17d content::GetNetworkConnectionTracker()
-[pid=3485][err] #14 0x55fe52a2a667 content::BackgroundSyncNetworkObserver::BackgroundSyncNetworkObserver()
-[pid=3485][err] #15 0x55fe52a1f0bf content::BackgroundSyncManager::BackgroundSyncManager()
-[pid=3485][err] #16 0x55fe52a1c61a content::BackgroundSyncManager::Create()
-[pid=3485][err] #17 0x55fe52a1c5a3 content::BackgroundSyncContextImpl::CreateBackgroundSyncManager()
-[pid=3485][err] #18 0x55fe52a1c16a content::BackgroundSyncContextImpl::Init()
-[pid=3485][err] #19 0x55fe53109a13 content::StoragePartitionImpl::Initialize()
-[pid=3485][err] #20 0x55fe5311b72d content::StoragePartitionImplMap::Get()
-[pid=3485][err] #21 0x55fe52a61be9 content::BrowserContext::GetDefaultStoragePartition()
-[pid=3485][err] #22 0x55fe5b493528 headless::HeadlessBrowserContextImpl::GetOriginTrialsControllerDelegate()
-[pid=3485][err] #23 0x55fe5b493383 headless::HeadlessBrowserContextImpl::HeadlessBrowserContextImpl()
-[pid=3485][err] #24 0x55fe5b4939ce headless::HeadlessBrowserContextImpl::Create()
-[pid=3485][err] #25 0x55fe5b495222 headless::HeadlessBrowserImpl::CreateBrowserContext()
-[pid=3485][err] #26 0x55fe54735b39 headless::(anonymous namespace)::HeadlessShell::OnBrowserStart()
-[pid=3485][err] #27 0x55fe5b49599e headless::HeadlessBrowserImpl::PreMainMessageLoopRun()
-[pid=3485][err] #28 0x55fe5b49e367 headless::HeadlessBrowserMainParts::PreMainMessageLoopRun()
-[pid=3485][err] #29 0x55fe52a81b72 content::BrowserMainLoop::PreMainMessageLoopRun()
-[pid=3485][err] #30 0x55fe53105a04 content::StartupTaskRunner::RunAllTasksNow()
-[pid=3485][err] #31 0x55fe52a817c5 content::BrowserMainLoop::CreateStartupTasks()
-[pid=3485][err] #32 0x55fe52a8438e content::BrowserMainRunnerImpl::Initialize()
-[pid=3485][err] #33 0x55fe5b49bc8d headless::HeadlessContentMainDelegate::RunProcess()
-[pid=3485][err] #34 0x55fe54187e56 content::RunBrowserProcessMain()
-[pid=3485][err] #35 0x55fe5418947c content::ContentMainRunnerImpl::RunBrowser()
-[pid=3485][err] #36 0x55fe541892b1 content::ContentMainRunnerImpl::Run()
-[pid=3485][err] #37 0x55fe54186c72 content::RunContentProcess()
-[pid=3485][err] #38 0x55fe54186eb7 content::ContentMain()
-[pid=3485][err] #39 0x55fe54735918 headless::HeadlessShellMain()
-[pid=3485][err] #40 0x55fe5030729a ChromeMain
-[pid=3485][err] #41 0x7f6623029d90 (/usr/lib/x86_64-linux-gnu/libc.so.6+0x29d8f)
-[pid=3485][err] #42 0x7f6623029e40 __libc_start_main
-[pid=3485][err] #43 0x55fe5030702a _start
-[pid=3485][err]   r8: 00002cd800414000  r9: 000006e0002252c0 r10: 0000000000000000 r11: 0000000000000246
-[pid=3485][err]  r12: 00dc2200d82c0000 r13: 000000000000000d r14: 000000000000000b r15: 00007ffeb87643f2
-[pid=3485][err]   di: 00007ffeb87643f0  si: 4f4c59454b4c5353  bp: 0000000000005353  bx: 00002cd80022c800
-[pid=3485][err]   dx: 00007ffeb87643f0  ax: 000000000000000d  cx: 454c4946474f4c59  sp: 00007ffeb87643b0
-[pid=3485][err]   ip: 00007f6623044c1d efl: 0000000000010206 cgf: 002b000000000033 erf: 0000000000000000
-[pid=3485][err]  trp: 000000000000000d msk: 0000000000000000 cr2: 0000000000000000
-[pid=3485][err] [end of stack trace]
-Call log:
-<launching> /home/runner/.cache/ms-playwright/chromium-1117/chrome-linux/chrome --disable-field-trial-config --disable-background-networking --enable-features=NetworkService,NetworkServiceInProcess --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=ImprovedCookieControls,LazyFrameLoading,GlobalMediaControls,DestroyProfileOnBrowserClose,MediaRouter,DialMediaRouteProvider,AcceptCHFrame,AutoExpandDetailsElement,CertificateTransparencyComponentUpdater,AvoidUnnecessaryBeforeUnloadCheckSync,Translate,HttpsUpgrades,PaintHolding --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --enable-automation --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --headless --hide-scrollbars --mute-audio --blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4 --no-sandbox --disable-gpu --single-process --user-data-dir=/tmp/playwright_chromiumdev_profile-XXXXXXXjH47a --remote-debugging-pipe --no-startup-window
-  - <launched> pid=3485
-  - [pid=3485][err] [0630/223637.828434:WARNING:audio_manager_linux.cc(53)] Falling back to ALSA for audio output. PulseAudio is not available or could not be initialized.
-  - [pid=3485][err] [0630/223637.832314:INFO:config_dir_policy_loader.cc(118)] Skipping mandatory platform policies because no policy file was found at: /etc/chromium/policies/managed
-  - [pid=3485][err] [0630/223637.832332:INFO:config_dir_policy_loader.cc(118)] Skipping recommended platform policies because no policy file was found at: /etc/chromium/policies/recommended
-  - [pid=3485][err] Received signal 11 SI_KERNEL000000000000
-  - [pid=3485][err]  Possibly a General Protection Fault, can be due to a non-canonical address dereference. See "Intel 64 and IA-32 Architectures Software Developer’s Manual", Volume 1, Section 3.3.7.1.
-  - [pid=3485][err] #0 0x55fe54d53332 base::debug::CollectStackTrace()
-  - [pid=3485][err] #1 0x55fe54d409fe base::debug::StackTrace::StackTrace()
-  - [pid=3485][err] #2 0x55fe54d52d41 base::debug::(anonymous namespace)::StackDumpSignalHandler()
-  - [pid=3485][err] #3 0x7f6623042520 (/usr/lib/x86_64-linux-gnu/libc.so.6+0x4251f)
-  - [pid=3485][err] #4 0x7f6623044c1d getenv
-  - [pid=3485][err] #5 0x55fe54c87a40 base::(anonymous namespace)::EnvironmentImpl::GetVarImpl()
-  - [pid=3485][err] #6 0x55fe54c87846 base::(anonymous namespace)::EnvironmentImpl::GetVar()
-  - [pid=3485][err] #7 0x55fe52dbe56c content::GetNetworkService()
-  - [pid=3485][err] #8 0x55fe52dbf1a5 content::(anonymous namespace)::BindNetworkChangeManagerReceiver()
-  - [pid=3485][err] #9 0x55fe529f64c1 base::internal::Invoker<>::Run()
-  - [pid=3485][err] #10 0x55fe5047bb8b base::RepeatingCallback<>::Run()
-  - [pid=3485][err] #11 0x55fe557bf4f7 network::NetworkConnectionTracker::Initialize()
-  - [pid=3485][err] #12 0x55fe557bf46f network::NetworkConnectionTracker::NetworkConnectionTracker()
-  - [pid=3485][err] #13 0x55fe52dbf17d content::GetNetworkConnectionTracker()
-  - [pid=3485][err] #14 0x55fe52a2a667 content::BackgroundSyncNetworkObserver::BackgroundSyncNetworkObserver()
-  - [pid=3485][err] #15 0x55fe52a1f0bf content::BackgroundSyncManager::BackgroundSyncManager()
-  - [pid=3485][err] #16 0x55fe52a1c61a content::BackgroundSyncManager::Create()
-  - [pid=3485][err] #17 0x55fe52a1c5a3 content::BackgroundSyncContextImpl::CreateBackgroundSyncManager()
-  - [pid=3485][err] #18 0x55fe52a1c16a content::BackgroundSyncContextImpl::Init()
-  - [pid=3485][err] #19 0x55fe53109a13 content::StoragePartitionImpl::Initialize()
-  - [pid=3485][err] #20 0x55fe5311b72d content::StoragePartitionImplMap::Get()
-  - [pid=3485][err] #21 0x55fe52a61be9 content::BrowserContext::GetDefaultStoragePartition()
-  - [pid=3485][err] #22 0x55fe5b493528 headless::HeadlessBrowserContextImpl::GetOriginTrialsControllerDelegate()
-  - [pid=3485][err] #23 0x55fe5b493383 headless::HeadlessBrowserContextImpl::HeadlessBrowserContextImpl()
-  - [pid=3485][err] #24 0x55fe5b4939ce headless::HeadlessBrowserContextImpl::Create()
-  - [pid=3485][err] #25 0x55fe5b495222 headless::HeadlessBrowserImpl::CreateBrowserContext()
-  - [pid=3485][err] #26 0x55fe54735b39 headless::(anonymous namespace)::HeadlessShell::OnBrowserStart()
-  - [pid=3485][err] #27 0x55fe5b49599e headless::HeadlessBrowserImpl::PreMainMessageLoopRun()
-  - [pid=3485][err] #28 0x55fe5b49e367 headless::HeadlessBrowserMainParts::PreMainMessageLoopRun()
-  - [pid=3485][err] #29 0x55fe52a81b72 content::BrowserMainLoop::PreMainMessageLoopRun()
-  - [pid=3485][err] #30 0x55fe53105a04 content::StartupTaskRunner::RunAllTasksNow()
-  - [pid=3485][err] #31 0x55fe52a817c5 content::BrowserMainLoop::CreateStartupTasks()
-  - [pid=3485][err] #32 0x55fe52a8438e content::BrowserMainRunnerImpl::Initialize()
-  - [pid=3485][err] #33 0x55fe5b49bc8d headless::HeadlessContentMainDelegate::RunProcess()
-  - [pid=3485][err] #34 0x55fe54187e56 content::RunBrowserProcessMain()
-  - [pid=3485][err] #35 0x55fe5418947c content::ContentMainRunnerImpl::RunBrowser()
-  - [pid=3485][err] #36 0x55fe541892b1 content::ContentMainRunnerImpl::Run()
-  - [pid=3485][err] #37 0x55fe54186c72 content::RunContentProcess()
-  - [pid=3485][err] #38 0x55fe54186eb7 content::ContentMain()
-  - [pid=3485][err] #39 0x55fe54735918 headless::HeadlessShellMain()
-  - [pid=3485][err] #40 0x55fe5030729a ChromeMain
-  - [pid=3485][err] #41 0x7f6623029d90 (/usr/lib/x86_64-linux-gnu/libc.so.6+0x29d8f)
-  - [pid=3485][err] #42 0x7f6623029e40 __libc_start_main
-  - [pid=3485][err] #43 0x55fe5030702a _start
-  - [pid=3485][err]   r8: 00002cd800414000  r9: 000006e0002252c0 r10: 0000000000000000 r11: 0000000000000246
-  - [pid=3485][err]  r12: 00dc2200d82c0000 r13: 000000000000000d r14: 000000000000000b r15: 00007ffeb87643f2
-  - [pid=3485][err]   di: 00007ffeb87643f0  si: 4f4c59454b4c5353  bp: 0000000000005353  bx: 00002cd80022c800
-  - [pid=3485][err]   dx: 00007ffeb87643f0  ax: 000000000000000d  cx: 454c4946474f4c59  sp: 00007ffeb87643b0
-  - [pid=3485][err]   ip: 00007f6623044c1d efl: 0000000000010206 cgf: 002b000000000033 erf: 0000000000000000
-  - [pid=3485][err]  trp: 000000000000000d msk: 0000000000000000 cr2: 0000000000000000
-  - [pid=3485][err] [end of stack trace]
-
+2024-06-30 23:23:06,091 Using selector: EpollSelector
+2024-06-30 23:25:10,033 Error: Data scraping unable to complete in 60.0s (retries: 3)
+2024-06-30 23:25:10,033 Using selector: EpollSelector
+2024-06-30 23:27:12,346 Error: Data scraping unable to complete in 60.0s (retries: 3)
+2024-06-30 23:27:12,346 Using selector: EpollSelector
+2024-06-30 23:29:14,825 Error: Data scraping unable to complete in 60.0s (retries: 3)
+2024-06-30 23:29:14,826 Using selector: EpollSelector
+2024-06-30 23:31:17,157 Error: Data scraping unable to complete in 60.0s (retries: 3)
+2024-06-30 23:31:17,158 Using selector: EpollSelector
+2024-06-30 23:33:19,798 Error: Data scraping unable to complete in 60.0s (retries: 3)
+2024-06-30 23:33:19,799 Using selector: EpollSelector
+2024-06-30 23:35:21,888 Error: Data scraping unable to complete in 60.0s (retries: 3)
+2024-06-30 23:35:21,889 Using selector: EpollSelector
+2024-06-30 23:37:24,042 Error: Data scraping unable to complete in 60.0s (retries: 3)
