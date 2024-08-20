@@ -1,76 +1,14 @@
-2024-08-20 15:25:28,548 Using selector: EpollSelector
-2024-08-20 15:27:30,984 Error: Data scraping unable to complete in 60.0s (retries: 3)
-2024-08-20 15:27:30,984 Using selector: EpollSelector
-2024-08-20 15:29:33,085 Error: Data scraping unable to complete in 60.0s (retries: 3)
-2024-08-20 15:29:33,086 Using selector: EpollSelector
-2024-08-20 15:31:36,172 Error: Data scraping unable to complete in 60.0s (retries: 3)
-2024-08-20 15:31:36,172 Using selector: EpollSelector
-2024-08-20 15:33:38,115 Error: Data scraping unable to complete in 60.0s (retries: 3)
-2024-08-20 15:33:38,116 Using selector: EpollSelector
-2024-08-20 15:35:40,536 Error: Data scraping unable to complete in 60.0s (retries: 3)
-2024-08-20 15:35:40,536 Using selector: EpollSelector
-2024-08-20 15:37:42,828 Error: Data scraping unable to complete in 60.0s (retries: 3)
-2024-08-20 15:37:42,828 Using selector: EpollSelector
-2024-08-20 15:37:43,377 Error: BrowserType.launch: Target page, context or browser has been closed
-Browser logs:
-
-<launching> /home/runner/.cache/ms-playwright/chromium-1129/chrome-linux/chrome --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=ImprovedCookieControls,LazyFrameLoading,GlobalMediaControls,DestroyProfileOnBrowserClose,MediaRouter,DialMediaRouteProvider,AcceptCHFrame,AutoExpandDetailsElement,CertificateTransparencyComponentUpdater,AvoidUnnecessaryBeforeUnloadCheckSync,Translate,HttpsUpgrades,PaintHolding,PlzDedicatedWorker --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --enable-automation --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --headless=old --hide-scrollbars --mute-audio --blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4 --no-sandbox --disable-gpu --single-process --user-data-dir=/tmp/playwright_chromiumdev_profile-XXXXXX6MZyyV --remote-debugging-pipe --no-startup-window
-<launched> pid=3504
-[pid=3504][err] Old Headless mode will be removed from the Chrome binary soon. Please use the new Headless mode (https://developer.chrome.com/docs/chromium/new-headless) or the chrome-headless-shell which is a standalone implementation of the old Headless mode (https://developer.chrome.com/blog/chrome-headless-shell).
-[pid=3504][err] 
-[pid=3504][err] [0820/153743.125915:WARNING:audio_manager_linux.cc(53)] Falling back to ALSA for audio output. PulseAudio is not available or could not be initialized.
-[pid=3504][err] Received signal 11 SI_KERNEL000000000000
-[pid=3504][err]  Possibly a General Protection Fault, can be due to a non-canonical address dereference. See "Intel 64 and IA-32 Architectures Software Developer’s Manual", Volume 1, Section 3.3.7.1.
-[pid=3504][err] #0 0x563d96655442 [0820/153743.133710:WARNING:bluez_dbus_manager.cc(248)] Floss manager not present, cannot set Floss enable/disable.
-[pid=3504][err] base::debug::CollectStackTrace()
-[pid=3504][err] #1 0x563d966423be base::debug::StackTrace::StackTrace()
-[pid=3504][err] #2 0x563d96654e51 base::debug::(anonymous namespace)::StackDumpSignalHandler()
-[pid=3504][err] #3 0x7faa28642520 (/usr/lib/x86_64-linux-gnu/libc.so.6+0x4251f)
-[pid=3504][err] #4 0x7faa28644c1d getenv
-[pid=3504][err] #5 0x563d967d69e9 epoll_init
-[pid=3504][err] #6 0x563d967d3e91 event_base_new
-[pid=3504][err] #7 0x563d9666164d base::MessagePumpLibevent::MessagePumpLibevent()
-[pid=3504][err] #8 0x563d9659d92b base::MessagePump::Create()
-[pid=3504][err] #9 0x563d96624a33 base::internal::SequenceManagerThreadDelegate::BindToCurrentThread()
-[pid=3504][err] #10 0x563d96624698 base::Thread::ThreadMain()
-[pid=3504][err] #11 0x563d96638b2a base::(anonymous namespace)::ThreadFunc()
-[pid=3504][err] #12 0x7faa28694ac3 (/usr/lib/x86_64-linux-gnu/libc.so.6+0x94ac2)
-[pid=3504][err] #13 0x7faa28726850 (/usr/lib/x86_64-linux-gnu/libc.so.6+0x12684f)
-[pid=3504][err]   r8: 0000089000225e00  r9: 0000000000000000 r10: 00007ffe98ee2080 r11: 0000000000000246
-[pid=3504][err]  r12: 005c020090080000 r13: 000000000000000d r14: 000000000000000b r15: 0000563d8ecdec20
-[pid=3504][err]   di: 0000563d8ecdec1e  si: 00007faa0f3f8f50  bp: 0000000000005645  bx: 0000089000024800
-[pid=3504][err]   dx: 0000563d8ecdec1e  ax: 000000000000000d  cx: 00007faa286ec09b  sp: 00007faa0f3f8ee0
-[pid=3504][err]   ip: 00007faa28644c1d efl: 0000000000010206 cgf: 002b000000000033 erf: 0000000000000000
-[pid=3504][err]  trp: 000000000000000d msk: 0000000000000000 cr2: 0000000000000000
-[pid=3504][err] [end of stack trace]
-Call log:
-<launching> /home/runner/.cache/ms-playwright/chromium-1129/chrome-linux/chrome --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=ImprovedCookieControls,LazyFrameLoading,GlobalMediaControls,DestroyProfileOnBrowserClose,MediaRouter,DialMediaRouteProvider,AcceptCHFrame,AutoExpandDetailsElement,CertificateTransparencyComponentUpdater,AvoidUnnecessaryBeforeUnloadCheckSync,Translate,HttpsUpgrades,PaintHolding,PlzDedicatedWorker --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --enable-automation --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --headless=old --hide-scrollbars --mute-audio --blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4 --no-sandbox --disable-gpu --single-process --user-data-dir=/tmp/playwright_chromiumdev_profile-XXXXXX6MZyyV --remote-debugging-pipe --no-startup-window
-  - <launched> pid=3504
-  - [pid=3504][err] Old Headless mode will be removed from the Chrome binary soon. Please use the new Headless mode (https://developer.chrome.com/docs/chromium/new-headless) or the chrome-headless-shell which is a standalone implementation of the old Headless mode (https://developer.chrome.com/blog/chrome-headless-shell).
-  - [pid=3504][err] 
-  - [pid=3504][err] [0820/153743.125915:WARNING:audio_manager_linux.cc(53)] Falling back to ALSA for audio output. PulseAudio is not available or could not be initialized.
-  - [pid=3504][err] Received signal 11 SI_KERNEL000000000000
-  - [pid=3504][err]  Possibly a General Protection Fault, can be due to a non-canonical address dereference. See "Intel 64 and IA-32 Architectures Software Developer’s Manual", Volume 1, Section 3.3.7.1.
-  - [pid=3504][err] #0 0x563d96655442 [0820/153743.133710:WARNING:bluez_dbus_manager.cc(248)] Floss manager not present, cannot set Floss enable/disable.
-  - [pid=3504][err] base::debug::CollectStackTrace()
-  - [pid=3504][err] #1 0x563d966423be base::debug::StackTrace::StackTrace()
-  - [pid=3504][err] #2 0x563d96654e51 base::debug::(anonymous namespace)::StackDumpSignalHandler()
-  - [pid=3504][err] #3 0x7faa28642520 (/usr/lib/x86_64-linux-gnu/libc.so.6+0x4251f)
-  - [pid=3504][err] #4 0x7faa28644c1d getenv
-  - [pid=3504][err] #5 0x563d967d69e9 epoll_init
-  - [pid=3504][err] #6 0x563d967d3e91 event_base_new
-  - [pid=3504][err] #7 0x563d9666164d base::MessagePumpLibevent::MessagePumpLibevent()
-  - [pid=3504][err] #8 0x563d9659d92b base::MessagePump::Create()
-  - [pid=3504][err] #9 0x563d96624a33 base::internal::SequenceManagerThreadDelegate::BindToCurrentThread()
-  - [pid=3504][err] #10 0x563d96624698 base::Thread::ThreadMain()
-  - [pid=3504][err] #11 0x563d96638b2a base::(anonymous namespace)::ThreadFunc()
-  - [pid=3504][err] #12 0x7faa28694ac3 (/usr/lib/x86_64-linux-gnu/libc.so.6+0x94ac2)
-  - [pid=3504][err] #13 0x7faa28726850 (/usr/lib/x86_64-linux-gnu/libc.so.6+0x12684f)
-  - [pid=3504][err]   r8: 0000089000225e00  r9: 0000000000000000 r10: 00007ffe98ee2080 r11: 0000000000000246
-  - [pid=3504][err]  r12: 005c020090080000 r13: 000000000000000d r14: 000000000000000b r15: 0000563d8ecdec20
-  - [pid=3504][err]   di: 0000563d8ecdec1e  si: 00007faa0f3f8f50  bp: 0000000000005645  bx: 0000089000024800
-  - [pid=3504][err]   dx: 0000563d8ecdec1e  ax: 000000000000000d  cx: 00007faa286ec09b  sp: 00007faa0f3f8ee0
-  - [pid=3504][err]   ip: 00007faa28644c1d efl: 0000000000010206 cgf: 002b000000000033 erf: 0000000000000000
-  - [pid=3504][err]  trp: 000000000000000d msk: 0000000000000000 cr2: 0000000000000000
-  - [pid=3504][err] [end of stack trace]
-
+2024-08-20 16:28:58,972 Using selector: EpollSelector
+2024-08-20 16:31:01,559 Error: Data scraping unable to complete in 60.0s (retries: 3)
+2024-08-20 16:31:01,559 Using selector: EpollSelector
+2024-08-20 16:33:04,000 Error: Data scraping unable to complete in 60.0s (retries: 3)
+2024-08-20 16:33:04,000 Using selector: EpollSelector
+2024-08-20 16:35:06,568 Error: Data scraping unable to complete in 60.0s (retries: 3)
+2024-08-20 16:35:06,568 Using selector: EpollSelector
+2024-08-20 16:37:08,948 Error: Data scraping unable to complete in 60.0s (retries: 3)
+2024-08-20 16:37:08,949 Using selector: EpollSelector
+2024-08-20 16:39:11,591 Error: Data scraping unable to complete in 60.0s (retries: 3)
+2024-08-20 16:39:11,591 Using selector: EpollSelector
+2024-08-20 16:41:13,975 Error: Data scraping unable to complete in 60.0s (retries: 3)
+2024-08-20 16:41:13,976 Using selector: EpollSelector
+2024-08-20 16:43:16,236 Error: Data scraping unable to complete in 60.0s (retries: 3)
