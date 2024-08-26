@@ -1,14 +1,28 @@
-2024-08-26 01:42:58,632 Using selector: EpollSelector
-2024-08-26 01:45:01,991 Error: Data scraping unable to complete in 60.0s (retries: 3)
-2024-08-26 01:45:01,991 Using selector: EpollSelector
-2024-08-26 01:47:04,077 Error: Data scraping unable to complete in 60.0s (retries: 3)
-2024-08-26 01:47:04,077 Using selector: EpollSelector
-2024-08-26 01:49:06,276 Error: Data scraping unable to complete in 60.0s (retries: 3)
-2024-08-26 01:49:06,277 Using selector: EpollSelector
-2024-08-26 01:51:08,464 Error: Data scraping unable to complete in 60.0s (retries: 3)
-2024-08-26 01:51:08,464 Using selector: EpollSelector
-2024-08-26 01:53:20,726 Error: Data scraping unable to complete in 60.0s (retries: 3)
-2024-08-26 01:53:20,726 Using selector: EpollSelector
-2024-08-26 01:55:22,765 Error: Data scraping unable to complete in 60.0s (retries: 3)
-2024-08-26 01:55:22,765 Using selector: EpollSelector
-2024-08-26 01:57:24,905 Error: Data scraping unable to complete in 60.0s (retries: 3)
+2024-08-26 02:43:32,705 Using selector: EpollSelector
+2024-08-26 02:45:35,694 Error: Data scraping unable to complete in 60.0s (retries: 3)
+2024-08-26 02:45:35,694 Using selector: EpollSelector
+2024-08-26 02:47:38,390 Error: Data scraping unable to complete in 60.0s (retries: 3)
+2024-08-26 02:47:38,390 Using selector: EpollSelector
+2024-08-26 02:47:38,848 Error: BrowserType.launch: Target page, context or browser has been closed
+Browser logs:
+
+<launching> /home/runner/.cache/ms-playwright/chromium-1129/chrome-linux/chrome --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=ImprovedCookieControls,LazyFrameLoading,GlobalMediaControls,DestroyProfileOnBrowserClose,MediaRouter,DialMediaRouteProvider,AcceptCHFrame,AutoExpandDetailsElement,CertificateTransparencyComponentUpdater,AvoidUnnecessaryBeforeUnloadCheckSync,Translate,HttpsUpgrades,PaintHolding,PlzDedicatedWorker --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --enable-automation --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --headless=old --hide-scrollbars --mute-audio --blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4 --no-sandbox --disable-gpu --single-process --user-data-dir=/tmp/playwright_chromiumdev_profile-XXXXXXw0EpeE --remote-debugging-pipe --no-startup-window
+<launched> pid=3240
+[pid=3240][err] Old Headless mode will be removed from the Chrome binary soon. Please use the new Headless mode (https://developer.chrome.com/docs/chromium/new-headless) or the chrome-headless-shell which is a standalone implementation of the old Headless mode (https://developer.chrome.com/blog/chrome-headless-shell).
+[pid=3240][err] 
+[pid=3240][err] [0826/024738.672492:WARNING:audio_manager_linux.cc(53)] Falling back to ALSA for audio output. PulseAudio is not available or could not be initialized.
+Call log:
+<launching> /home/runner/.cache/ms-playwright/chromium-1129/chrome-linux/chrome --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=ImprovedCookieControls,LazyFrameLoading,GlobalMediaControls,DestroyProfileOnBrowserClose,MediaRouter,DialMediaRouteProvider,AcceptCHFrame,AutoExpandDetailsElement,CertificateTransparencyComponentUpdater,AvoidUnnecessaryBeforeUnloadCheckSync,Translate,HttpsUpgrades,PaintHolding,PlzDedicatedWorker --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --enable-automation --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --headless=old --hide-scrollbars --mute-audio --blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4 --no-sandbox --disable-gpu --single-process --user-data-dir=/tmp/playwright_chromiumdev_profile-XXXXXXw0EpeE --remote-debugging-pipe --no-startup-window
+  - <launched> pid=3240
+  - [pid=3240][err] Old Headless mode will be removed from the Chrome binary soon. Please use the new Headless mode (https://developer.chrome.com/docs/chromium/new-headless) or the chrome-headless-shell which is a standalone implementation of the old Headless mode (https://developer.chrome.com/blog/chrome-headless-shell).
+  - [pid=3240][err] 
+  - [pid=3240][err] [0826/024738.672492:WARNING:audio_manager_linux.cc(53)] Falling back to ALSA for audio output. PulseAudio is not available or could not be initialized.
+
+2024-08-26 02:47:38,849 Error: It looks like you are using Playwright Sync API inside the asyncio loop.
+Please use the Async API instead.
+2024-08-26 02:47:38,849 Error: It looks like you are using Playwright Sync API inside the asyncio loop.
+Please use the Async API instead.
+2024-08-26 02:47:38,849 Error: It looks like you are using Playwright Sync API inside the asyncio loop.
+Please use the Async API instead.
+2024-08-26 02:47:38,849 Error: It looks like you are using Playwright Sync API inside the asyncio loop.
+Please use the Async API instead.
