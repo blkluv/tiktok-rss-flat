@@ -1,102 +1,14 @@
-2024-08-29 04:28:28,162 Using selector: EpollSelector
-2024-08-29 04:28:29,053 Error: BrowserType.launch: Target page, context or browser has been closed
-Browser logs:
-
-<launching> /home/runner/.cache/ms-playwright/chromium-1129/chrome-linux/chrome --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=ImprovedCookieControls,LazyFrameLoading,GlobalMediaControls,DestroyProfileOnBrowserClose,MediaRouter,DialMediaRouteProvider,AcceptCHFrame,AutoExpandDetailsElement,CertificateTransparencyComponentUpdater,AvoidUnnecessaryBeforeUnloadCheckSync,Translate,HttpsUpgrades,PaintHolding,PlzDedicatedWorker --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --enable-automation --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --headless=old --hide-scrollbars --mute-audio --blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4 --no-sandbox --disable-gpu --single-process --user-data-dir=/tmp/playwright_chromiumdev_profile-XXXXXXDEjxYY --remote-debugging-pipe --no-startup-window
-<launched> pid=3064
-[pid=3064][err] Old Headless mode will be removed from the Chrome binary soon. Please use the new Headless mode (https://developer.chrome.com/docs/chromium/new-headless) or the chrome-headless-shell which is a standalone implementation of the old Headless mode (https://developer.chrome.com/blog/chrome-headless-shell).
-[pid=3064][err] 
-[pid=3064][err] [0829/042828.596059:WARNING:audio_manager_linux.cc(53)] Falling back to ALSA for audio output. PulseAudio is not available or could not be initialized.
-[pid=3064][err] Received signal 11 SI_KERNEL000000000000
-[pid=3064][err]  Possibly a General Protection Fault, can be due to a non-canonical address dereference. See "Intel 64 and IA-32 Architectures Software Developer’s Manual", Volume 1, Section 3.3.7.1.
-[pid=3064][err] #0 0x555a79d07442 base::debug::CollectStackTrace()
-[pid=3064][err] #1 0x555a79cf43be base::debug::StackTrace::StackTrace()
-[pid=3064][err] #2 0x555a79d06e51 base::debug::(anonymous namespace)::StackDumpSignalHandler()
-[pid=3064][err] #3 0x7f5d8d842520 (/usr/lib/x86_64-linux-gnu/libc.so.6+0x4251f)
-[pid=3064][err] #4 0x7f5d8d844c1d getenv
-[pid=3064][err] #5 0x555a7a64d7af IA__FcConfigGetFilename
-[pid=3064][err] #6 0x555a7a66a384 FcParseInclude
-[pid=3064][err] #7 0x555a7a669aaf FcEndElement
-[pid=3064][err] #8 0x555a7a6884ef xmlParseEndTag1
-[pid=3064][err] #9 0x555a7a68ba36 xmlParseChunk
-[pid=3064][err] #10 0x555a7a669067 FcConfigParseAndLoadFromMemoryInternal
-[pid=3064][err] #11 0x555a7a668bac _FcConfigParse
-[pid=3064][err] #12 0x555a7a65c2cb FcInitLoadOwnConfig
-[pid=3064][err] #13 0x555a7a65c521 IA__FcInitLoadConfigAndFonts
-[pid=3064][err] #14 0x555a7a64c6d1 FcConfigInit
-[pid=3064][err] #15 0x555a7a79e945 base::NoDestructor<>::NoDestructor<>()
-[pid=3064][err] #16 0x555a7a79e8d6 base::internal::Invoker<>::RunOnce()
-[pid=3064][err] #17 0x555a79c9835f base::TaskAnnotator::RunTaskImpl()
-[pid=3064][err] #18 0x555a79cbc237 base::internal::TaskTracker::RunTaskImpl()
-[pid=3064][err] #19 0x555a79cbc2d1 base::internal::TaskTracker::RunSkipOnShutdown()
-[pid=3064][err] #20 0x555a79cbbf86 base::internal::TaskTracker::RunTask()
-[pid=3064][err] #21 0x555a79cbba55 base::internal::TaskTracker::RunAndPopNextTask()
-[pid=3064][err] #22 0x555a79cce1e8 base::internal::WorkerThread::RunWorker()
-[pid=3064][err] #23 0x555a79ccde4d base::internal::WorkerThread::RunPooledWorker()
-[pid=3064][err] #24 0x555a79ccdd4d base::internal::WorkerThread::ThreadMain()
-[pid=3064][err] #25 0x555a79ceab2a base::(anonymous namespace)::ThreadFunc()
-[pid=3064][err] #26 0x7f5d8d894ac3 (/usr/lib/x86_64-linux-gnu/libc.so.6+0x94ac2)
-[pid=3064][err] #27 0x7f5d8d926850 (/usr/lib/x86_64-linux-gnu/libc.so.6+0x12684f)
-[pid=3064][err]   r8: 000002e000215400  r9: 0000000000000000 r10: 000000000000000a r11: 0000000000000202
-[pid=3064][err]  r12: 005c0200e0020000 r13: 000000000000000f r14: 000000000000000d r15: 0000555a72442d88
-[pid=3064][err]   di: 0000555a72442d86  si: 00007f5d88df5650  bp: 0000000000004f46  bx: 000002e000024800
-[pid=3064][err]   dx: 0000555a72442d86  ax: 000000000000000f  cx: 0000000000000004  sp: 00007f5d88df5260
-[pid=3064][err]   ip: 00007f5d8d844c1d efl: 0000000000010206 cgf: 002b000000000033 erf: 0000000000000000
-[pid=3064][err]  trp: 000000000000000d msk: 0000000000000000 cr2: 0000000000000000
-[pid=3064][err] [end of stack trace]
-Call log:
-<launching> /home/runner/.cache/ms-playwright/chromium-1129/chrome-linux/chrome --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=ImprovedCookieControls,LazyFrameLoading,GlobalMediaControls,DestroyProfileOnBrowserClose,MediaRouter,DialMediaRouteProvider,AcceptCHFrame,AutoExpandDetailsElement,CertificateTransparencyComponentUpdater,AvoidUnnecessaryBeforeUnloadCheckSync,Translate,HttpsUpgrades,PaintHolding,PlzDedicatedWorker --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --enable-automation --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --headless=old --hide-scrollbars --mute-audio --blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4 --no-sandbox --disable-gpu --single-process --user-data-dir=/tmp/playwright_chromiumdev_profile-XXXXXXDEjxYY --remote-debugging-pipe --no-startup-window
-  - <launched> pid=3064
-  - [pid=3064][err] Old Headless mode will be removed from the Chrome binary soon. Please use the new Headless mode (https://developer.chrome.com/docs/chromium/new-headless) or the chrome-headless-shell which is a standalone implementation of the old Headless mode (https://developer.chrome.com/blog/chrome-headless-shell).
-  - [pid=3064][err] 
-  - [pid=3064][err] [0829/042828.596059:WARNING:audio_manager_linux.cc(53)] Falling back to ALSA for audio output. PulseAudio is not available or could not be initialized.
-  - [pid=3064][err] Received signal 11 SI_KERNEL000000000000
-  - [pid=3064][err]  Possibly a General Protection Fault, can be due to a non-canonical address dereference. See "Intel 64 and IA-32 Architectures Software Developer’s Manual", Volume 1, Section 3.3.7.1.
-  - [pid=3064][err] #0 0x555a79d07442 base::debug::CollectStackTrace()
-  - [pid=3064][err] #1 0x555a79cf43be base::debug::StackTrace::StackTrace()
-  - [pid=3064][err] #2 0x555a79d06e51 base::debug::(anonymous namespace)::StackDumpSignalHandler()
-  - [pid=3064][err] #3 0x7f5d8d842520 (/usr/lib/x86_64-linux-gnu/libc.so.6+0x4251f)
-  - [pid=3064][err] #4 0x7f5d8d844c1d getenv
-  - [pid=3064][err] #5 0x555a7a64d7af IA__FcConfigGetFilename
-  - [pid=3064][err] #6 0x555a7a66a384 FcParseInclude
-  - [pid=3064][err] #7 0x555a7a669aaf FcEndElement
-  - [pid=3064][err] #8 0x555a7a6884ef xmlParseEndTag1
-  - [pid=3064][err] #9 0x555a7a68ba36 xmlParseChunk
-  - [pid=3064][err] #10 0x555a7a669067 FcConfigParseAndLoadFromMemoryInternal
-  - [pid=3064][err] #11 0x555a7a668bac _FcConfigParse
-  - [pid=3064][err] #12 0x555a7a65c2cb FcInitLoadOwnConfig
-  - [pid=3064][err] #13 0x555a7a65c521 IA__FcInitLoadConfigAndFonts
-  - [pid=3064][err] #14 0x555a7a64c6d1 FcConfigInit
-  - [pid=3064][err] #15 0x555a7a79e945 base::NoDestructor<>::NoDestructor<>()
-  - [pid=3064][err] #16 0x555a7a79e8d6 base::internal::Invoker<>::RunOnce()
-  - [pid=3064][err] #17 0x555a79c9835f base::TaskAnnotator::RunTaskImpl()
-  - [pid=3064][err] #18 0x555a79cbc237 base::internal::TaskTracker::RunTaskImpl()
-  - [pid=3064][err] #19 0x555a79cbc2d1 base::internal::TaskTracker::RunSkipOnShutdown()
-  - [pid=3064][err] #20 0x555a79cbbf86 base::internal::TaskTracker::RunTask()
-  - [pid=3064][err] #21 0x555a79cbba55 base::internal::TaskTracker::RunAndPopNextTask()
-  - [pid=3064][err] #22 0x555a79cce1e8 base::internal::WorkerThread::RunWorker()
-  - [pid=3064][err] #23 0x555a79ccde4d base::internal::WorkerThread::RunPooledWorker()
-  - [pid=3064][err] #24 0x555a79ccdd4d base::internal::WorkerThread::ThreadMain()
-  - [pid=3064][err] #25 0x555a79ceab2a base::(anonymous namespace)::ThreadFunc()
-  - [pid=3064][err] #26 0x7f5d8d894ac3 (/usr/lib/x86_64-linux-gnu/libc.so.6+0x94ac2)
-  - [pid=3064][err] #27 0x7f5d8d926850 (/usr/lib/x86_64-linux-gnu/libc.so.6+0x12684f)
-  - [pid=3064][err]   r8: 000002e000215400  r9: 0000000000000000 r10: 000000000000000a r11: 0000000000000202
-  - [pid=3064][err]  r12: 005c0200e0020000 r13: 000000000000000f r14: 000000000000000d r15: 0000555a72442d88
-  - [pid=3064][err]   di: 0000555a72442d86  si: 00007f5d88df5650  bp: 0000000000004f46  bx: 000002e000024800
-  - [pid=3064][err]   dx: 0000555a72442d86  ax: 000000000000000f  cx: 0000000000000004  sp: 00007f5d88df5260
-  - [pid=3064][err]   ip: 00007f5d8d844c1d efl: 0000000000010206 cgf: 002b000000000033 erf: 0000000000000000
-  - [pid=3064][err]  trp: 000000000000000d msk: 0000000000000000 cr2: 0000000000000000
-  - [pid=3064][err] [end of stack trace]
-
-2024-08-29 04:28:29,053 Error: It looks like you are using Playwright Sync API inside the asyncio loop.
-Please use the Async API instead.
-2024-08-29 04:28:29,054 Error: It looks like you are using Playwright Sync API inside the asyncio loop.
-Please use the Async API instead.
-2024-08-29 04:28:29,054 Error: It looks like you are using Playwright Sync API inside the asyncio loop.
-Please use the Async API instead.
-2024-08-29 04:28:29,054 Error: It looks like you are using Playwright Sync API inside the asyncio loop.
-Please use the Async API instead.
-2024-08-29 04:28:29,054 Error: It looks like you are using Playwright Sync API inside the asyncio loop.
-Please use the Async API instead.
-2024-08-29 04:28:29,054 Error: It looks like you are using Playwright Sync API inside the asyncio loop.
-Please use the Async API instead.
+2024-08-29 05:27:20,538 Using selector: EpollSelector
+2024-08-29 05:29:24,220 Error: Data scraping unable to complete in 60.0s (retries: 3)
+2024-08-29 05:29:24,220 Using selector: EpollSelector
+2024-08-29 05:31:26,508 Error: Data scraping unable to complete in 60.0s (retries: 3)
+2024-08-29 05:31:26,509 Using selector: EpollSelector
+2024-08-29 05:33:29,469 Error: Data scraping unable to complete in 60.0s (retries: 3)
+2024-08-29 05:33:29,469 Using selector: EpollSelector
+2024-08-29 05:35:31,918 Error: Data scraping unable to complete in 60.0s (retries: 3)
+2024-08-29 05:35:31,918 Using selector: EpollSelector
+2024-08-29 05:37:34,589 Error: Data scraping unable to complete in 60.0s (retries: 3)
+2024-08-29 05:37:34,589 Using selector: EpollSelector
+2024-08-29 05:39:36,913 Error: Data scraping unable to complete in 60.0s (retries: 3)
+2024-08-29 05:39:36,914 Using selector: EpollSelector
+2024-08-29 05:41:39,321 Error: Data scraping unable to complete in 60.0s (retries: 3)
