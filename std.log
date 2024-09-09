@@ -1,74 +1,14 @@
-2024-09-08 23:25:51,518 Using selector: EpollSelector
-2024-09-08 23:27:53,873 Error: Data scraping unable to complete in 60.0s (retries: 3)
-2024-09-08 23:27:53,874 Using selector: EpollSelector
-2024-09-08 23:29:56,284 Error: Data scraping unable to complete in 60.0s (retries: 3)
-2024-09-08 23:29:56,285 Using selector: EpollSelector
-2024-09-08 23:31:58,751 Error: Data scraping unable to complete in 60.0s (retries: 3)
-2024-09-08 23:31:58,751 Using selector: EpollSelector
-2024-09-08 23:34:00,942 Error: Data scraping unable to complete in 60.0s (retries: 3)
-2024-09-08 23:34:00,942 Using selector: EpollSelector
-2024-09-08 23:36:03,629 Error: Data scraping unable to complete in 60.0s (retries: 3)
-2024-09-08 23:36:03,630 Using selector: EpollSelector
-2024-09-08 23:36:04,124 Error: BrowserType.launch: Target page, context or browser has been closed
-Browser logs:
-
-<launching> /home/runner/.cache/ms-playwright/chromium-1129/chrome-linux/chrome --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=ImprovedCookieControls,LazyFrameLoading,GlobalMediaControls,DestroyProfileOnBrowserClose,MediaRouter,DialMediaRouteProvider,AcceptCHFrame,AutoExpandDetailsElement,CertificateTransparencyComponentUpdater,AvoidUnnecessaryBeforeUnloadCheckSync,Translate,HttpsUpgrades,PaintHolding,PlzDedicatedWorker --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --enable-automation --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --headless=old --hide-scrollbars --mute-audio --blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4 --no-sandbox --disable-gpu --single-process --user-data-dir=/tmp/playwright_chromiumdev_profile-XXXXXXeMZ9Q9 --remote-debugging-pipe --no-startup-window
-<launched> pid=3451
-[pid=3451][err] Old Headless mode will be removed from the Chrome binary soon. Please use the new Headless mode (https://developer.chrome.com/docs/chromium/new-headless) or the chrome-headless-shell which is a standalone implementation of the old Headless mode (https://developer.chrome.com/blog/chrome-headless-shell).
-[pid=3451][err] 
-[pid=3451][err] [0908/233603.907791:WARNING:audio_manager_linux.cc(53)] Falling back to ALSA for audio output. PulseAudio is not available or could not be initialized.
-[pid=3451][err] Received signal 11 SI_KERNEL000000000000
-[pid=3451][err]  Possibly a General Protection Fault, can be due to a non-canonical address dereference. See "Intel 64 and IA-32 Architectures Software Developer’s Manual", Volume 1, Section 3.3.7.1.
-[pid=3451][err] #0 0x563d66e64442 [0908/233603.915497:WARNING:bluez_dbus_manager.cc(248)] Floss manager not present, cannot set Floss enable/disable.
-[pid=3451][err] base::debug::CollectStackTrace()
-[pid=3451][err] #1 0x563d66e513be base::debug::StackTrace::StackTrace()
-[pid=3451][err] #2 0x563d66e63e51 base::debug::(anonymous namespace)::StackDumpSignalHandler()
-[pid=3451][err] #3 0x7fb878a42520 (/usr/lib/x86_64-linux-gnu/libc.so.6+0x4251f)
-[pid=3451][err] #4 0x7fb878a44c1d getenv
-[pid=3451][err] #5 0x563d66fe2ef2 event_base_new
-[pid=3451][err] #6 0x563d66e7064d base::MessagePumpLibevent::MessagePumpLibevent()
-[pid=3451][err] #7 0x563d66dac92b base::MessagePump::Create()
-[pid=3451][err] #8 0x563d66e33a33 base::internal::SequenceManagerThreadDelegate::BindToCurrentThread()
-[pid=3451][err] #9 0x563d66e33698 base::Thread::ThreadMain()
-[pid=3451][err] #10 0x563d66e47b2a base::(anonymous namespace)::ThreadFunc()
-[pid=3451][err] #11 0x7fb878a94ac3 (/usr/lib/x86_64-linux-gnu/libc.so.6+0x94ac2)
-[pid=3451][err] #12 0x7fb878b26850 (/usr/lib/x86_64-linux-gnu/libc.so.6+0x12684f)
-[pid=3451][err]   r8: 0000386c000ee0b0  r9: 00007fb800000000 r10: 0000386c000ee130 r11: 0000000000000246
-[pid=3451][err]  r12: 005c020068380000 r13: 0000000000000011 r14: 000000000000000f r15: 0000563d5f89b1a3
-[pid=3451][err]   di: 0000563d5f89b1a1  si: 0000000000000093  bp: 0000000000005645  bx: 0000386800024800
-[pid=3451][err]   dx: 0000563d5f89b1a1  ax: 0000000000000011  cx: 00007fb878aec09b  sp: 00007fb8605faf10
-[pid=3451][err]   ip: 00007fb878a44c1d efl: 0000000000010206 cgf: 002b000000000033 erf: 0000000000000000
-[pid=3451][err]  trp: 000000000000000d msk: 0000000000000000 cr2: 0000000000000000
-[pid=3451][err] [end of stack trace]
-Call log:
-<launching> /home/runner/.cache/ms-playwright/chromium-1129/chrome-linux/chrome --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=ImprovedCookieControls,LazyFrameLoading,GlobalMediaControls,DestroyProfileOnBrowserClose,MediaRouter,DialMediaRouteProvider,AcceptCHFrame,AutoExpandDetailsElement,CertificateTransparencyComponentUpdater,AvoidUnnecessaryBeforeUnloadCheckSync,Translate,HttpsUpgrades,PaintHolding,PlzDedicatedWorker --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --enable-automation --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --headless=old --hide-scrollbars --mute-audio --blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4 --no-sandbox --disable-gpu --single-process --user-data-dir=/tmp/playwright_chromiumdev_profile-XXXXXXeMZ9Q9 --remote-debugging-pipe --no-startup-window
-  - <launched> pid=3451
-  - [pid=3451][err] Old Headless mode will be removed from the Chrome binary soon. Please use the new Headless mode (https://developer.chrome.com/docs/chromium/new-headless) or the chrome-headless-shell which is a standalone implementation of the old Headless mode (https://developer.chrome.com/blog/chrome-headless-shell).
-  - [pid=3451][err] 
-  - [pid=3451][err] [0908/233603.907791:WARNING:audio_manager_linux.cc(53)] Falling back to ALSA for audio output. PulseAudio is not available or could not be initialized.
-  - [pid=3451][err] Received signal 11 SI_KERNEL000000000000
-  - [pid=3451][err]  Possibly a General Protection Fault, can be due to a non-canonical address dereference. See "Intel 64 and IA-32 Architectures Software Developer’s Manual", Volume 1, Section 3.3.7.1.
-  - [pid=3451][err] #0 0x563d66e64442 [0908/233603.915497:WARNING:bluez_dbus_manager.cc(248)] Floss manager not present, cannot set Floss enable/disable.
-  - [pid=3451][err] base::debug::CollectStackTrace()
-  - [pid=3451][err] #1 0x563d66e513be base::debug::StackTrace::StackTrace()
-  - [pid=3451][err] #2 0x563d66e63e51 base::debug::(anonymous namespace)::StackDumpSignalHandler()
-  - [pid=3451][err] #3 0x7fb878a42520 (/usr/lib/x86_64-linux-gnu/libc.so.6+0x4251f)
-  - [pid=3451][err] #4 0x7fb878a44c1d getenv
-  - [pid=3451][err] #5 0x563d66fe2ef2 event_base_new
-  - [pid=3451][err] #6 0x563d66e7064d base::MessagePumpLibevent::MessagePumpLibevent()
-  - [pid=3451][err] #7 0x563d66dac92b base::MessagePump::Create()
-  - [pid=3451][err] #8 0x563d66e33a33 base::internal::SequenceManagerThreadDelegate::BindToCurrentThread()
-  - [pid=3451][err] #9 0x563d66e33698 base::Thread::ThreadMain()
-  - [pid=3451][err] #10 0x563d66e47b2a base::(anonymous namespace)::ThreadFunc()
-  - [pid=3451][err] #11 0x7fb878a94ac3 (/usr/lib/x86_64-linux-gnu/libc.so.6+0x94ac2)
-  - [pid=3451][err] #12 0x7fb878b26850 (/usr/lib/x86_64-linux-gnu/libc.so.6+0x12684f)
-  - [pid=3451][err]   r8: 0000386c000ee0b0  r9: 00007fb800000000 r10: 0000386c000ee130 r11: 0000000000000246
-  - [pid=3451][err]  r12: 005c020068380000 r13: 0000000000000011 r14: 000000000000000f r15: 0000563d5f89b1a3
-  - [pid=3451][err]   di: 0000563d5f89b1a1  si: 0000000000000093  bp: 0000000000005645  bx: 0000386800024800
-  - [pid=3451][err]   dx: 0000563d5f89b1a1  ax: 0000000000000011  cx: 00007fb878aec09b  sp: 00007fb8605faf10
-  - [pid=3451][err]   ip: 00007fb878a44c1d efl: 0000000000010206 cgf: 002b000000000033 erf: 0000000000000000
-  - [pid=3451][err]  trp: 000000000000000d msk: 0000000000000000 cr2: 0000000000000000
-  - [pid=3451][err] [end of stack trace]
-
-2024-09-08 23:36:04,124 Error: It looks like you are using Playwright Sync API inside the asyncio loop.
-Please use the Async API instead.
+2024-09-09 01:49:17,277 Using selector: EpollSelector
+2024-09-09 01:51:19,599 Error: Data scraping unable to complete in 60.0s (retries: 3)
+2024-09-09 01:51:19,599 Using selector: EpollSelector
+2024-09-09 01:53:21,902 Error: Data scraping unable to complete in 60.0s (retries: 3)
+2024-09-09 01:53:21,902 Using selector: EpollSelector
+2024-09-09 01:55:24,042 Error: Data scraping unable to complete in 60.0s (retries: 3)
+2024-09-09 01:55:24,043 Using selector: EpollSelector
+2024-09-09 01:57:26,723 Error: Data scraping unable to complete in 60.0s (retries: 3)
+2024-09-09 01:57:26,723 Using selector: EpollSelector
+2024-09-09 01:59:29,085 Error: Data scraping unable to complete in 60.0s (retries: 3)
+2024-09-09 01:59:29,085 Using selector: EpollSelector
+2024-09-09 02:01:31,455 Error: Data scraping unable to complete in 60.0s (retries: 3)
+2024-09-09 02:01:31,456 Using selector: EpollSelector
+2024-09-09 02:03:33,642 Error: Data scraping unable to complete in 60.0s (retries: 3)
