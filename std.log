@@ -1,14 +1,74 @@
-2024-09-27 02:55:52,870 Using selector: EpollSelector
-2024-09-27 02:57:57,367 Error: Data scraping unable to complete in 60.0s (retries: 3)
-2024-09-27 02:57:57,367 Using selector: EpollSelector
-2024-09-27 03:00:00,129 Error: Data scraping unable to complete in 60.0s (retries: 3)
-2024-09-27 03:00:00,129 Using selector: EpollSelector
-2024-09-27 03:02:03,231 Error: Data scraping unable to complete in 60.0s (retries: 3)
-2024-09-27 03:02:03,232 Using selector: EpollSelector
-2024-09-27 03:04:05,298 Error: Data scraping unable to complete in 60.0s (retries: 3)
-2024-09-27 03:04:05,298 Using selector: EpollSelector
-2024-09-27 03:06:09,585 Error: Data scraping unable to complete in 60.0s (retries: 3)
-2024-09-27 03:06:09,585 Using selector: EpollSelector
-2024-09-27 03:08:12,225 Error: Data scraping unable to complete in 60.0s (retries: 3)
-2024-09-27 03:08:12,225 Using selector: EpollSelector
-2024-09-27 03:10:14,135 Error: Data scraping unable to complete in 60.0s (retries: 3)
+2024-09-27 03:31:40,982 Using selector: EpollSelector
+2024-09-27 03:33:43,272 Error: Data scraping unable to complete in 60.0s (retries: 3)
+2024-09-27 03:33:43,272 Using selector: EpollSelector
+2024-09-27 03:35:45,677 Error: Data scraping unable to complete in 60.0s (retries: 3)
+2024-09-27 03:35:45,677 Using selector: EpollSelector
+2024-09-27 03:37:48,019 Error: Data scraping unable to complete in 60.0s (retries: 3)
+2024-09-27 03:37:48,019 Using selector: EpollSelector
+2024-09-27 03:39:50,293 Error: Data scraping unable to complete in 60.0s (retries: 3)
+2024-09-27 03:39:50,294 Using selector: EpollSelector
+2024-09-27 03:41:53,156 Error: Data scraping unable to complete in 60.0s (retries: 3)
+2024-09-27 03:41:53,156 Using selector: EpollSelector
+2024-09-27 03:43:55,276 Error: Data scraping unable to complete in 60.0s (retries: 3)
+2024-09-27 03:43:55,276 Using selector: EpollSelector
+2024-09-27 03:43:55,753 Error: BrowserType.launch: Target page, context or browser has been closed
+Browser logs:
+
+<launching> /home/runner/.cache/ms-playwright/chromium-1134/chrome-linux/chrome --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=ImprovedCookieControls,LazyFrameLoading,GlobalMediaControls,DestroyProfileOnBrowserClose,MediaRouter,DialMediaRouteProvider,AcceptCHFrame,AutoExpandDetailsElement,CertificateTransparencyComponentUpdater,AvoidUnnecessaryBeforeUnloadCheckSync,Translate,HttpsUpgrades,PaintHolding,PlzDedicatedWorker --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --enable-automation --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --headless=old --hide-scrollbars --mute-audio --blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4 --no-sandbox --disable-gpu --single-process --user-data-dir=/tmp/playwright_chromiumdev_profile-xiRnLS --remote-debugging-pipe --no-startup-window
+<launched> pid=3602
+[pid=3602][err] Old Headless mode will be removed from the Chrome binary soon. Please use the new Headless mode (https://developer.chrome.com/docs/chromium/new-headless) or the chrome-headless-shell which is a standalone implementation of the old Headless mode (https://developer.chrome.com/blog/chrome-headless-shell).
+[pid=3602][err] 
+[pid=3602][err] [0927/034355.553236:WARNING:audio_manager_linux.cc(54)] Falling back to ALSA for audio output. PulseAudio is not available or could not be initialized.
+[pid=3602][err] Received signal 11 SI_KERNEL000000000000
+[pid=3602][err]  Possibly a General Protection Fault, can be due to a non-canonical address dereference. See "Intel 64 and IA-32 Architectures Software Developer’s Manual", Volume 1, Section 3.3.7.1.
+[pid=3602][err] #0 0x558e5161fcd2 base::debug::CollectStackTrace()
+[pid=3602][err] #1 0x558e5160ceae [0927/034355.571954:WARNING:viz_main_impl.cc(85)] VizNullHypothesis is disabled (not a warning)
+[pid=3602][err] base::debug::StackTrace::StackTrace()
+[pid=3602][err] #2 0x558e5161f6e1 base::debug::(anonymous namespace)::StackDumpSignalHandler()
+[pid=3602][err] #3 0x7f6850e42520 (/usr/lib/x86_64-linux-gnu/libc.so.6+0x4251f)
+[pid=3602][err] #4 0x7f6850e44c1d getenv
+[pid=3602][err] #5 0x558e5179e692 event_base_new
+[pid=3602][err] #6 0x558e5162bd4d base::MessagePumpLibevent::MessagePumpLibevent()
+[pid=3602][err] #7 0x558e51569e1b base::MessagePump::Create()
+[pid=3602][err] #8 0x558e515ef703 base::internal::SequenceManagerThreadDelegate::BindToCurrentThread()
+[pid=3602][err] #9 0x558e515ef368 base::Thread::ThreadMain()
+[pid=3602][err] #10 0x558e5160341a base::(anonymous namespace)::ThreadFunc()
+[pid=3602][err] #11 0x7f6850e94ac3 (/usr/lib/x86_64-linux-gnu/libc.so.6+0x94ac2)
+[pid=3602][err] #12 0x7f6850f26850 (/usr/lib/x86_64-linux-gnu/libc.so.6+0x12684f)
+[pid=3602][err]   r8: 00001784000c60b0  r9: 00007f68371fdc80 r10: 00001784000c6130 r11: 0000000000000246
+[pid=3602][err]  r12: 005c020080170000 r13: 0000000000000011 r14: 000000000000000f r15: 0000558e49f2a785
+[pid=3602][err]   di: 0000558e49f2a783  si: 0000000000000095  bp: 0000000000005645  bx: 0000178000024800
+[pid=3602][err]   dx: 0000558e49f2a783  ax: 0000000000000011  cx: 00007f6850eec09b  sp: 00007f68371fde90
+[pid=3602][err]   ip: 00007f6850e44c1d efl: 0000000000010206 cgf: 002b000000000033 erf: 0000000000000000
+[pid=3602][err]  trp: 000000000000000d msk: 0000000000000000 cr2: 0000000000000000
+[pid=3602][err] [end of stack trace]
+Call log:
+<launching> /home/runner/.cache/ms-playwright/chromium-1134/chrome-linux/chrome --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=ImprovedCookieControls,LazyFrameLoading,GlobalMediaControls,DestroyProfileOnBrowserClose,MediaRouter,DialMediaRouteProvider,AcceptCHFrame,AutoExpandDetailsElement,CertificateTransparencyComponentUpdater,AvoidUnnecessaryBeforeUnloadCheckSync,Translate,HttpsUpgrades,PaintHolding,PlzDedicatedWorker --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --enable-automation --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --headless=old --hide-scrollbars --mute-audio --blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4 --no-sandbox --disable-gpu --single-process --user-data-dir=/tmp/playwright_chromiumdev_profile-xiRnLS --remote-debugging-pipe --no-startup-window
+  - <launched> pid=3602
+  - [pid=3602][err] Old Headless mode will be removed from the Chrome binary soon. Please use the new Headless mode (https://developer.chrome.com/docs/chromium/new-headless) or the chrome-headless-shell which is a standalone implementation of the old Headless mode (https://developer.chrome.com/blog/chrome-headless-shell).
+  - [pid=3602][err] 
+  - [pid=3602][err] [0927/034355.553236:WARNING:audio_manager_linux.cc(54)] Falling back to ALSA for audio output. PulseAudio is not available or could not be initialized.
+  - [pid=3602][err] Received signal 11 SI_KERNEL000000000000
+  - [pid=3602][err]  Possibly a General Protection Fault, can be due to a non-canonical address dereference. See "Intel 64 and IA-32 Architectures Software Developer’s Manual", Volume 1, Section 3.3.7.1.
+  - [pid=3602][err] #0 0x558e5161fcd2 base::debug::CollectStackTrace()
+  - [pid=3602][err] #1 0x558e5160ceae [0927/034355.571954:WARNING:viz_main_impl.cc(85)] VizNullHypothesis is disabled (not a warning)
+  - [pid=3602][err] base::debug::StackTrace::StackTrace()
+  - [pid=3602][err] #2 0x558e5161f6e1 base::debug::(anonymous namespace)::StackDumpSignalHandler()
+  - [pid=3602][err] #3 0x7f6850e42520 (/usr/lib/x86_64-linux-gnu/libc.so.6+0x4251f)
+  - [pid=3602][err] #4 0x7f6850e44c1d getenv
+  - [pid=3602][err] #5 0x558e5179e692 event_base_new
+  - [pid=3602][err] #6 0x558e5162bd4d base::MessagePumpLibevent::MessagePumpLibevent()
+  - [pid=3602][err] #7 0x558e51569e1b base::MessagePump::Create()
+  - [pid=3602][err] #8 0x558e515ef703 base::internal::SequenceManagerThreadDelegate::BindToCurrentThread()
+  - [pid=3602][err] #9 0x558e515ef368 base::Thread::ThreadMain()
+  - [pid=3602][err] #10 0x558e5160341a base::(anonymous namespace)::ThreadFunc()
+  - [pid=3602][err] #11 0x7f6850e94ac3 (/usr/lib/x86_64-linux-gnu/libc.so.6+0x94ac2)
+  - [pid=3602][err] #12 0x7f6850f26850 (/usr/lib/x86_64-linux-gnu/libc.so.6+0x12684f)
+  - [pid=3602][err]   r8: 00001784000c60b0  r9: 00007f68371fdc80 r10: 00001784000c6130 r11: 0000000000000246
+  - [pid=3602][err]  r12: 005c020080170000 r13: 0000000000000011 r14: 000000000000000f r15: 0000558e49f2a785
+  - [pid=3602][err]   di: 0000558e49f2a783  si: 0000000000000095  bp: 0000000000005645  bx: 0000178000024800
+  - [pid=3602][err]   dx: 0000558e49f2a783  ax: 0000000000000011  cx: 00007f6850eec09b  sp: 00007f68371fde90
+  - [pid=3602][err]   ip: 00007f6850e44c1d efl: 0000000000010206 cgf: 002b000000000033 erf: 0000000000000000
+  - [pid=3602][err]  trp: 000000000000000d msk: 0000000000000000 cr2: 0000000000000000
+  - [pid=3602][err] [end of stack trace]
+
