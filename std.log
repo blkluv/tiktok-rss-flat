@@ -1,14 +1,114 @@
-2024-10-11 09:27:18,970 Using selector: EpollSelector
-2024-10-11 09:29:23,058 Error: Data scraping unable to complete in 60.0s (retries: 3)
-2024-10-11 09:29:23,059 Using selector: EpollSelector
-2024-10-11 09:31:25,959 Error: Data scraping unable to complete in 60.0s (retries: 3)
-2024-10-11 09:31:25,959 Using selector: EpollSelector
-2024-10-11 09:33:28,708 Error: Data scraping unable to complete in 60.0s (retries: 3)
-2024-10-11 09:33:28,709 Using selector: EpollSelector
-2024-10-11 09:35:30,819 Error: Data scraping unable to complete in 60.0s (retries: 3)
-2024-10-11 09:35:30,820 Using selector: EpollSelector
-2024-10-11 09:37:33,027 Error: Data scraping unable to complete in 60.0s (retries: 3)
-2024-10-11 09:37:33,028 Using selector: EpollSelector
-2024-10-11 09:39:35,016 Error: Data scraping unable to complete in 60.0s (retries: 3)
-2024-10-11 09:39:35,016 Using selector: EpollSelector
-2024-10-11 09:41:37,295 Error: Data scraping unable to complete in 60.0s (retries: 3)
+2024-10-11 10:30:24,215 Using selector: EpollSelector
+2024-10-11 10:32:26,729 Error: Data scraping unable to complete in 60.0s (retries: 3)
+2024-10-11 10:32:26,729 Using selector: EpollSelector
+2024-10-11 10:34:28,998 Error: Data scraping unable to complete in 60.0s (retries: 3)
+2024-10-11 10:34:28,999 Using selector: EpollSelector
+2024-10-11 10:36:31,267 Error: Data scraping unable to complete in 60.0s (retries: 3)
+2024-10-11 10:36:31,267 Using selector: EpollSelector
+2024-10-11 10:36:32,152 Error: BrowserType.launch: Target page, context or browser has been closed
+Browser logs:
+
+<launching> /home/runner/.cache/ms-playwright/chromium-1134/chrome-linux/chrome --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=ImprovedCookieControls,LazyFrameLoading,GlobalMediaControls,DestroyProfileOnBrowserClose,MediaRouter,DialMediaRouteProvider,AcceptCHFrame,AutoExpandDetailsElement,CertificateTransparencyComponentUpdater,AvoidUnnecessaryBeforeUnloadCheckSync,Translate,HttpsUpgrades,PaintHolding,PlzDedicatedWorker --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --enable-automation --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --headless=old --hide-scrollbars --mute-audio --blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4 --no-sandbox --disable-gpu --single-process --user-data-dir=/tmp/playwright_chromiumdev_profile-DqwGtX --remote-debugging-pipe --no-startup-window
+<launched> pid=3336
+[pid=3336][err] Old Headless mode will be removed from the Chrome binary soon. Please use the new Headless mode (https://developer.chrome.com/docs/chromium/new-headless) or the chrome-headless-shell which is a standalone implementation of the old Headless mode (https://developer.chrome.com/blog/chrome-headless-shell).
+[pid=3336][err] 
+[pid=3336][err] [1011/103631.560521:WARNING:audio_manager_linux.cc(54)] Falling back to ALSA for audio output. PulseAudio is not available or could not be initialized.
+[pid=3336][err] Received signal 11 SI_KERNEL000000000000
+[pid=3336][err]  Possibly a General Protection Fault, can be due to a non-canonical address dereference. See "Intel 64 and IA-32 Architectures Software Developer’s Manual", Volume 1, Section 3.3.7.1.
+[pid=3336][err] #0 0x559a82441cd2 [1011/103631.577392:WARNING:viz_main_impl.cc(85)] VizNullHypothesis is disabled (not a warning)
+[pid=3336][err] base::debug::CollectStackTrace()
+[pid=3336][err] #1 0x559a8242eeae base::debug::StackTrace::StackTrace()
+[pid=3336][err] #2 0x559a824416e1 base::debug::(anonymous namespace)::StackDumpSignalHandler()
+[pid=3336][err] #3 0x7fa8d6242520 (/usr/lib/x86_64-linux-gnu/libc.so.6+0x4251f)
+[pid=3336][err] #4 0x7fa8d6244c1d getenv
+[pid=3336][err] #5 0x559a823711bd base::(anonymous namespace)::EnvironmentImpl::GetVarImpl()
+[pid=3336][err] #6 0x559a82371049 base::(anonymous namespace)::EnvironmentImpl::GetVar()
+[pid=3336][err] #7 0x559a8244c5d6 base::nix::GetDesktopEnvironment()
+[pid=3336][err] #8 0x559a82948351 net::ProxyConfigServiceLinux::Delegate::Delegate()
+[pid=3336][err] #9 0x559a82949c38 net::ProxyConfigServiceLinux::ProxyConfigServiceLinux()
+[pid=3336][err] #10 0x559a82885322 net::ProxyConfigService::CreateSystemProxyConfigService()
+[pid=3336][err] #11 0x559a88bbfd51 headless::HeadlessProxyConfigMonitor::HeadlessProxyConfigMonitor()
+[pid=3336][err] #12 0x559a88bbf839 headless::HeadlessRequestContextManager::HeadlessRequestContextManager()
+[pid=3336][err] #13 0x559a88bbef58 headless::HeadlessRequestContextManager::CreateSystemContext()
+[pid=3336][err] #14 0x559a88bbd194 headless::HeadlessBrowserImpl::SetDefaultBrowserContext()
+[pid=3336][err] #15 0x559a81e3e748 headless::(anonymous namespace)::HeadlessShell::OnBrowserStart()
+[pid=3336][err] #16 0x559a88bbd606 headless::HeadlessBrowserImpl::PreMainMessageLoopRun()
+[pid=3336][err] #17 0x559a88bc60a7 headless::HeadlessBrowserMainParts::PreMainMessageLoopRun()
+[pid=3336][err] #18 0x559a7fdc5892 content::BrowserMainLoop::PreMainMessageLoopRun()
+[pid=3336][err] #19 0x559a80477ab4 content::StartupTaskRunner::RunAllTasksNow()
+[pid=3336][err] #20 0x559a7fdc54e5 content::BrowserMainLoop::CreateStartupTasks()
+[pid=3336][err] #21 0x559a7fdc80ee content::BrowserMainRunnerImpl::Initialize()
+[pid=3336][err] #22 0x559a88bc3acd headless::HeadlessContentMainDelegate::RunProcess()
+[pid=3336][err] #23 0x559a8185ed2b content::RunBrowserProcessMain()
+[pid=3336][err] #24 0x559a8186056e content::ContentMainRunnerImpl::RunBrowser()
+[pid=3336][err] #25 0x559a81860133 content::ContentMainRunnerImpl::Run()
+[pid=3336][err] #26 0x559a8185dce6 content::RunContentProcess()
+[pid=3336][err] #27 0x559a8185df47 content::ContentMain()
+[pid=3336][err] #28 0x559a81e3e528 headless::HeadlessShellMain()
+[pid=3336][err] #29 0x559a7d4aa4d9 ChromeMain
+[pid=3336][err] #30 0x7fa8d6229d90 (/usr/lib/x86_64-linux-gnu/libc.so.6+0x29d8f)
+[pid=3336][err] #31 0x7fa8d6229e40 __libc_start_main
+[pid=3336][err] #32 0x559a7d4aa02a _start
+[pid=3336][err]   r8: 00001d3000214000  r9: 00007fa8cf7f8dd8 r10: 0000000000000000 r11: 000000000000000d
+[pid=3336][err]  r12: 005c0200301d0000 r13: 0000000000000018 r14: 0000000000000016 r15: 00001d340021b632
+[pid=3336][err]   di: 00001d340021b630  si: 00001d340021b660  bp: 0000000000006e67  bx: 00001d3000024800
+[pid=3336][err]   dx: 00001d340021b630  ax: 0000000000000018  cx: 9ac30c77ca595a01  sp: 00007ffc6d1aa910
+[pid=3336][err]   ip: 00007fa8d6244c1d efl: 0000000000010206 cgf: 002b000000000033 erf: 0000000000000000
+[pid=3336][err]  trp: 000000000000000d msk: 0000000000000000 cr2: 0000000000000000
+[pid=3336][err] [end of stack trace]
+Call log:
+<launching> /home/runner/.cache/ms-playwright/chromium-1134/chrome-linux/chrome --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=ImprovedCookieControls,LazyFrameLoading,GlobalMediaControls,DestroyProfileOnBrowserClose,MediaRouter,DialMediaRouteProvider,AcceptCHFrame,AutoExpandDetailsElement,CertificateTransparencyComponentUpdater,AvoidUnnecessaryBeforeUnloadCheckSync,Translate,HttpsUpgrades,PaintHolding,PlzDedicatedWorker --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --enable-automation --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --headless=old --hide-scrollbars --mute-audio --blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4 --no-sandbox --disable-gpu --single-process --user-data-dir=/tmp/playwright_chromiumdev_profile-DqwGtX --remote-debugging-pipe --no-startup-window
+  - <launched> pid=3336
+  - [pid=3336][err] Old Headless mode will be removed from the Chrome binary soon. Please use the new Headless mode (https://developer.chrome.com/docs/chromium/new-headless) or the chrome-headless-shell which is a standalone implementation of the old Headless mode (https://developer.chrome.com/blog/chrome-headless-shell).
+  - [pid=3336][err] 
+  - [pid=3336][err] [1011/103631.560521:WARNING:audio_manager_linux.cc(54)] Falling back to ALSA for audio output. PulseAudio is not available or could not be initialized.
+  - [pid=3336][err] Received signal 11 SI_KERNEL000000000000
+  - [pid=3336][err]  Possibly a General Protection Fault, can be due to a non-canonical address dereference. See "Intel 64 and IA-32 Architectures Software Developer’s Manual", Volume 1, Section 3.3.7.1.
+  - [pid=3336][err] #0 0x559a82441cd2 [1011/103631.577392:WARNING:viz_main_impl.cc(85)] VizNullHypothesis is disabled (not a warning)
+  - [pid=3336][err] base::debug::CollectStackTrace()
+  - [pid=3336][err] #1 0x559a8242eeae base::debug::StackTrace::StackTrace()
+  - [pid=3336][err] #2 0x559a824416e1 base::debug::(anonymous namespace)::StackDumpSignalHandler()
+  - [pid=3336][err] #3 0x7fa8d6242520 (/usr/lib/x86_64-linux-gnu/libc.so.6+0x4251f)
+  - [pid=3336][err] #4 0x7fa8d6244c1d getenv
+  - [pid=3336][err] #5 0x559a823711bd base::(anonymous namespace)::EnvironmentImpl::GetVarImpl()
+  - [pid=3336][err] #6 0x559a82371049 base::(anonymous namespace)::EnvironmentImpl::GetVar()
+  - [pid=3336][err] #7 0x559a8244c5d6 base::nix::GetDesktopEnvironment()
+  - [pid=3336][err] #8 0x559a82948351 net::ProxyConfigServiceLinux::Delegate::Delegate()
+  - [pid=3336][err] #9 0x559a82949c38 net::ProxyConfigServiceLinux::ProxyConfigServiceLinux()
+  - [pid=3336][err] #10 0x559a82885322 net::ProxyConfigService::CreateSystemProxyConfigService()
+  - [pid=3336][err] #11 0x559a88bbfd51 headless::HeadlessProxyConfigMonitor::HeadlessProxyConfigMonitor()
+  - [pid=3336][err] #12 0x559a88bbf839 headless::HeadlessRequestContextManager::HeadlessRequestContextManager()
+  - [pid=3336][err] #13 0x559a88bbef58 headless::HeadlessRequestContextManager::CreateSystemContext()
+  - [pid=3336][err] #14 0x559a88bbd194 headless::HeadlessBrowserImpl::SetDefaultBrowserContext()
+  - [pid=3336][err] #15 0x559a81e3e748 headless::(anonymous namespace)::HeadlessShell::OnBrowserStart()
+  - [pid=3336][err] #16 0x559a88bbd606 headless::HeadlessBrowserImpl::PreMainMessageLoopRun()
+  - [pid=3336][err] #17 0x559a88bc60a7 headless::HeadlessBrowserMainParts::PreMainMessageLoopRun()
+  - [pid=3336][err] #18 0x559a7fdc5892 content::BrowserMainLoop::PreMainMessageLoopRun()
+  - [pid=3336][err] #19 0x559a80477ab4 content::StartupTaskRunner::RunAllTasksNow()
+  - [pid=3336][err] #20 0x559a7fdc54e5 content::BrowserMainLoop::CreateStartupTasks()
+  - [pid=3336][err] #21 0x559a7fdc80ee content::BrowserMainRunnerImpl::Initialize()
+  - [pid=3336][err] #22 0x559a88bc3acd headless::HeadlessContentMainDelegate::RunProcess()
+  - [pid=3336][err] #23 0x559a8185ed2b content::RunBrowserProcessMain()
+  - [pid=3336][err] #24 0x559a8186056e content::ContentMainRunnerImpl::RunBrowser()
+  - [pid=3336][err] #25 0x559a81860133 content::ContentMainRunnerImpl::Run()
+  - [pid=3336][err] #26 0x559a8185dce6 content::RunContentProcess()
+  - [pid=3336][err] #27 0x559a8185df47 content::ContentMain()
+  - [pid=3336][err] #28 0x559a81e3e528 headless::HeadlessShellMain()
+  - [pid=3336][err] #29 0x559a7d4aa4d9 ChromeMain
+  - [pid=3336][err] #30 0x7fa8d6229d90 (/usr/lib/x86_64-linux-gnu/libc.so.6+0x29d8f)
+  - [pid=3336][err] #31 0x7fa8d6229e40 __libc_start_main
+  - [pid=3336][err] #32 0x559a7d4aa02a _start
+  - [pid=3336][err]   r8: 00001d3000214000  r9: 00007fa8cf7f8dd8 r10: 0000000000000000 r11: 000000000000000d
+  - [pid=3336][err]  r12: 005c0200301d0000 r13: 0000000000000018 r14: 0000000000000016 r15: 00001d340021b632
+  - [pid=3336][err]   di: 00001d340021b630  si: 00001d340021b660  bp: 0000000000006e67  bx: 00001d3000024800
+  - [pid=3336][err]   dx: 00001d340021b630  ax: 0000000000000018  cx: 9ac30c77ca595a01  sp: 00007ffc6d1aa910
+  - [pid=3336][err]   ip: 00007fa8d6244c1d efl: 0000000000010206 cgf: 002b000000000033 erf: 0000000000000000
+  - [pid=3336][err]  trp: 000000000000000d msk: 0000000000000000 cr2: 0000000000000000
+  - [pid=3336][err] [end of stack trace]
+
+2024-10-11 10:36:32,152 Error: It looks like you are using Playwright Sync API inside the asyncio loop.
+Please use the Async API instead.
+2024-10-11 10:36:32,152 Error: It looks like you are using Playwright Sync API inside the asyncio loop.
+Please use the Async API instead.
+2024-10-11 10:36:32,152 Error: It looks like you are using Playwright Sync API inside the asyncio loop.
+Please use the Async API instead.
