@@ -1,20 +1,14 @@
-2024-10-27 12:45:55,755 Using selector: EpollSelector
-2024-10-27 12:47:58,165 Error: Data scraping unable to complete in 60.0s (retries: 3)
-2024-10-27 12:47:58,165 Using selector: EpollSelector
-2024-10-27 12:50:00,572 Error: Data scraping unable to complete in 60.0s (retries: 3)
-2024-10-27 12:50:00,573 Using selector: EpollSelector
-2024-10-27 12:52:12,949 Error: Data scraping unable to complete in 60.0s (retries: 3)
-2024-10-27 12:52:12,950 Using selector: EpollSelector
-2024-10-27 12:54:15,436 Error: Data scraping unable to complete in 60.0s (retries: 3)
-2024-10-27 12:54:15,437 Using selector: EpollSelector
-2024-10-27 12:54:22,025 Error: Page.goto: net::ERR_CONNECTION_RESET at https://www.tiktok.com/@visitballyhoura
-Call log:
-navigating to "https://www.tiktok.com/@visitballyhoura", waiting until "load"
-
-2024-10-27 12:54:22,025 Using selector: EpollSelector
-2024-10-27 12:54:29,181 Error: Page.goto: net::ERR_CONNECTION_RESET at https://www.tiktok.com/@healxyz
-Call log:
-navigating to "https://www.tiktok.com/@healxyz", waiting until "load"
-
-2024-10-27 12:54:29,182 Using selector: EpollSelector
-2024-10-27 12:56:43,969 Error: Data scraping unable to complete in 60.0s (retries: 3)
+2024-10-27 13:27:26,903 Using selector: EpollSelector
+2024-10-27 13:29:29,270 Error: Data scraping unable to complete in 60.0s (retries: 3)
+2024-10-27 13:29:29,271 Using selector: EpollSelector
+2024-10-27 13:31:31,583 Error: Data scraping unable to complete in 60.0s (retries: 3)
+2024-10-27 13:31:31,583 Using selector: EpollSelector
+2024-10-27 13:33:35,172 Error: Data scraping unable to complete in 60.0s (retries: 3)
+2024-10-27 13:33:35,172 Using selector: EpollSelector
+2024-10-27 13:35:37,200 Error: Data scraping unable to complete in 60.0s (retries: 3)
+2024-10-27 13:35:37,200 Using selector: EpollSelector
+2024-10-27 13:37:39,717 Error: Data scraping unable to complete in 60.0s (retries: 3)
+2024-10-27 13:37:39,717 Using selector: EpollSelector
+2024-10-27 13:39:41,787 Error: Data scraping unable to complete in 60.0s (retries: 3)
+2024-10-27 13:39:41,788 Using selector: EpollSelector
+2024-10-27 13:41:44,196 Error: Data scraping unable to complete in 60.0s (retries: 3)
